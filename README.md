@@ -11,7 +11,7 @@ It replaces Burp's built-in Macro system with a drag-and-drop canvas where you
 build multi-step HTTP flows, automatically inject session tokens, and validate
 reflected payloads across multiple (MAX 3) targets - all without writing a single script.
 
-<img width="1309" height="722" alt="image" src="https://github.com/user-attachments/assets/bd18727f-796b-43c4-a80a-b230a3667722" />
+<img width="1309" height="722" alt="Screenshot 2026-05-30 002621" src="https://github.com/user-attachments/assets/42868dce-31c4-4123-b20b-0fe662043c43" />
 
 
 
@@ -25,75 +25,80 @@ Macro Builder adds a **"Macro Builder"** tab to Burp Suite. Inside it you get a 
 **1. Send to Macro Workspace**
 
 Right-click any request → MacroFlow Extension → Send Request to Macro Workspace.
-<img width="858" height="530" alt="rightClick-send-to-MacroWorkspace1" src="https://github.com/user-attachments/assets/043f66f2-dcd0-4c03-8938-b7d400bf4097" />
+<img width="858" height="530" alt="rightClick-send-to-MacroWorkspace1" src="https://github.com/user-attachments/assets/409ed0f5-9db6-417d-87e9-6ff69af73f52" />
+
 
 When sending a request to the Macro Workspace, you can choose to create a new workflow or select an existing one.
-<img width="739" height="447" alt="rightClick-send-to-MacroWorkspace2" src="https://github.com/user-attachments/assets/62dd6756-6eeb-4882-b7f0-c3a6e7ff1f0d" />
+<img width="739" height="447" alt="rightClick-send-to-MacroWorkspace2" src="https://github.com/user-attachments/assets/1aaf93a2-8b61-495e-bee4-9dbc27edc592" />
+
 
 If creating a new workflow, enter a workflow name - the request will be added to that workflow automatically.
-<img width="702" height="470" alt="rightClick-send-to-MacroWorkspace3" src="https://github.com/user-attachments/assets/9320e916-43aa-40fd-a147-abdc4bee5657" />
+<img width="702" height="470" alt="rightClick-send-to-MacroWorkspace3" src="https://github.com/user-attachments/assets/37685072-d63d-482b-b1c2-cd58a6a79966" />
+
 
 As shown below, the workflow is created and the Request Node is pre-populated with the request details.
-<img width="1189" height="547" alt="rightClick-send-to-MacroWorkspace4" src="https://github.com/user-attachments/assets/6a3fa60a-dc8a-4b8e-8bb3-a5b9ca8116a5" />
+<img width="1189" height="547" alt="rightClick-send-to-MacroWorkspace4" src="https://github.com/user-attachments/assets/874d3cdd-90ab-478b-8e34-1f3297e3ea8c" />
+
 
 ---
 
 **2. Ignite Node, Custom Node, Request Nodes & Append Request - Feature Demo**
 
 A workflow is set up to grab a fresh token after login.
-<img width="1181" height="654" alt="ignite1" src="https://github.com/user-attachments/assets/4c3cfc14-c363-466c-9bf8-fcd3a94dccc4" />
+<img width="1181" height="654" alt="ignite1" src="https://github.com/user-attachments/assets/23dc547b-2364-45fb-a56d-cd3ad73e5938" />
 
 
 Instead of recreating the login flow in a new workflow, an Ignite Node is added. The screenshot below shows how the token placeholders captured by the "Login Flow1" workflow become available in the "IgniteNode Demo" workflow.
-<img width="1278" height="690" alt="ignite2" src="https://github.com/user-attachments/assets/5b8eaa6d-5514-4c26-a181-b4ef4b814f3c" />
+<img width="1278" height="690" alt="ignite2" src="https://github.com/user-attachments/assets/6bb4fdcf-521d-40e0-a979-045e1fe8ab91" />
 
 
 A Custom Node is used here to capture user input so that it can be used to validate how the input is reflected across other endpoints.
-<img width="1328" height="707" alt="ignite3" src="https://github.com/user-attachments/assets/46b32893-7908-47b4-91ed-ebcb95290ee0" />
+<img width="1328" height="707" alt="ignite3" src="https://github.com/user-attachments/assets/b6481095-b65d-40c4-8786-b187bbbd467a" />
 
 
 A request is made to the "Add New Coupon Code" endpoint while the workflow is OFF - as shown in the screenshot, the request is unauthorized due to missing tokens.
-<img width="1170" height="386" alt="ignite4" src="https://github.com/user-attachments/assets/a3e50d83-f785-4e66-913e-6049babfb928" />
+<img width="1170" height="386" alt="ignite4" src="https://github.com/user-attachments/assets/644a8310-065b-4afe-959c-c9d51adceff4" />
 
 The workflow is turned ON.
-<img width="1202" height="654" alt="ignite5" src="https://github.com/user-attachments/assets/8f54b6f1-9ec4-4e83-8f4c-d28bb74b6fe0" />
+<img width="1202" height="654" alt="ignite5" src="https://github.com/user-attachments/assets/7416255d-8a61-4662-8446-84a24359f46c" />
 
 The workflow executes and the request succeeds.
-<img width="1165" height="443" alt="ignite6" src="https://github.com/user-attachments/assets/700ae9d3-2f3f-4a56-a434-a7dcc0f1452b" />
+<img width="1165" height="443" alt="ignite6" src="https://github.com/user-attachments/assets/5b50cdb4-6a7f-4976-886c-74917eac4933" />
 
 To validate how the newly added coupon data is reflected in another endpoint, make sure the "Add New Coupon Code" endpoint is set as the Trigger Target (TT). Then right-click the second endpoint (where the reflected data can be fetched) and select "Append Response to [Request Node Name]".
-<img width="1250" height="708" alt="ignite7" src="https://github.com/user-attachments/assets/4d1257e7-3638-435b-b488-d900e6ab4f54" />
-<img width="1189" height="685" alt="ignite8" src="https://github.com/user-attachments/assets/fb15d71d-4eb6-48f4-bbb5-a3c88289785c" />
+<img width="1250" height="708" alt="ignite7" src="https://github.com/user-attachments/assets/1630d990-3693-4696-b962-62106128bb74" />
+<img width="1189" height="685" alt="ignite8" src="https://github.com/user-attachments/assets/eadc0f86-8c2a-4cae-91ad-8c0cada8941d" />
 
 Upon requesting the "Add New Coupon Code" endpoint again, the newly added coupon details are visible in the appended response - demonstrating how user input data is reflected across endpoints.
-<img width="1162" height="680" alt="ignite9" src="https://github.com/user-attachments/assets/95e9b4b2-fc65-4b31-b43f-2a022650f86a" />
+<img width="1162" height="680" alt="ignite9" src="https://github.com/user-attachments/assets/22dd3725-3efc-4cb0-ab61-5fd7824660ed" />
 
 
 ---
 **3. Custom Node**
 
 Trigger Node → Custom Node - In this demo, Scope filtering, Header Addition, Match & Replace, and Header Removal rules are configured on the Custom Node.
-<img width="1549" height="683" alt="custom1" src="https://github.com/user-attachments/assets/e6acbae9-08d8-480c-8aff-4251066aceb8" />
+<img width="1549" height="683" alt="custom1" src="https://github.com/user-attachments/assets/e816d535-ca17-4070-8570-39906dd85681" />
 
 Workflow OFF - the triggered request passes through unmodified; all unwanted headers are present in the outgoing request.
-<img width="1173" height="647" alt="CustomBefore1" src="https://github.com/user-attachments/assets/3f76832c-1d4b-46be-9a11-f75b1bb1fd65" />
+<img width="1173" height="647" alt="CustomBefore1" src="https://github.com/user-attachments/assets/4387a1b4-a259-4f7a-ba5b-75209ad5be6d" />
 
 Workflow ON - the Custom Node applies its rules; headers are added, replaced, and removed as configured.
-<img width="1157" height="647" alt="CustomAfter" src="https://github.com/user-attachments/assets/b02c5ae2-7c53-4ef0-8e38-b385988a23c5" />
+<img width="1157" height="647" alt="CustomAfter" src="https://github.com/user-attachments/assets/71837ec0-c096-49e1-97b6-6f483563c8b1" />
+
 
 ---
 **4. CSRF Token Automation**
 
 As shown, the server responds with "Invalid CSRF token" - every request requires a fresh CSRF token.
-<img width="1170" height="395" alt="csrf1" src="https://github.com/user-attachments/assets/a388dda3-8cc4-4599-ab48-8d58b4803597" />
+<img width="1170" height="395" alt="csrf1" src="https://github.com/user-attachments/assets/094d4b2f-a2ca-4ddd-88ea-a3507bce03fc" />
 
 A workflow is created with a Request Node that fetches the CSRF token, and a Custom Node that extracts the token value and passes it downstream via the Downstream Captures section.
-<img width="1131" height="681" alt="csrf2" src="https://github.com/user-attachments/assets/278c6c3e-1d2b-4786-85bf-89654cb49db4" />
-<img width="1579" height="763" alt="csrf3" src="https://github.com/user-attachments/assets/032da8e2-3382-49a3-8d51-b56546ca1cc0" />
+<img width="1131" height="681" alt="csrf2" src="https://github.com/user-attachments/assets/23da09c6-42ec-4fbf-8f1d-d4cd50c2ac95" />
+<img width="1579" height="763" alt="csrf3" src="https://github.com/user-attachments/assets/15137e23-32e4-4fed-ab1d-ad1f4a8fb458" />
 
 Workflow ON - the same request is made again; this time the correct CSRF token is injected automatically and the request is successfully redirected to the expected location.
-<img width="1132" height="720" alt="csrf4" src="https://github.com/user-attachments/assets/2afbdfe5-eb23-4734-be89-9b32a63ef8b1" />
-<img width="1168" height="441" alt="csrf5" src="https://github.com/user-attachments/assets/aa3a828a-d6b6-4fc8-9dfe-aa76bac67fd4" />
+<img width="1132" height="720" alt="csrf4" src="https://github.com/user-attachments/assets/4597ab27-a91a-4d58-a945-47196f1d4428" />
+<img width="1168" height="441" alt="csrf5" src="https://github.com/user-attachments/assets/4b0a73e5-daa6-47e2-8ebb-d9ef717c5919" />
 
 
 ---
