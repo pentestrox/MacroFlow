@@ -26,6 +26,10 @@ The demo.json file includes the following workflows:
 - Workflows from **crAPI** (https://github.com/OWASP/crAPI)
 - A **CSRF** workflow based on the login flow from **Gin and Juice Shop** (https://ginandjuice.shop)
 
+Import:
+<img width="1264" height="555" alt="Import1" src="https://github.com/user-attachments/assets/bda9eae4-721a-4886-859d-4001bcaf0e93" />
+
+
 **1. Send to Macro Workspace**
 
 Right-click any request → MacroFlow Extension → Send Request to Macro Workspace.
