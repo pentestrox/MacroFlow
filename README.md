@@ -22,6 +22,10 @@ Macro Builder adds a **"Macro Builder"** tab to Burp Suite. Inside it you get a 
 ---
 ## Demo
 
+The demo.json file includes the following workflows:
+- Workflows from **crAPI** (https://github.com/OWASP/crAPI)
+- A **CSRF** workflow based on the login flow from **Gin and Juice Shop** (https://ginandjuice.shop)
+
 **1. Send to Macro Workspace**
 
 Right-click any request → MacroFlow Extension → Send Request to Macro Workspace.
