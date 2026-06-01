@@ -1,4 +1,4 @@
-# MacroFlow - Burp Suite Extension (Version 1.0.0)
+# MacroFlow - Burp Suite Extension (Version 1.0.1)
 
 > ⚠️ **Development Phase (Solo - Fun Project)**
 
@@ -141,9 +141,9 @@ Workflow ON - the same request is made again; this time the correct CSRF token i
 
 ## Installation
 
-1. Download `MacroWorkFlow-v1.0.0.jar` from the [Releases](#) page.
+1. Download `MacroWorkFlow.jar` from the [Releases](#) page.
 2. In Burp Suite go to **Extensions → Add**.
-3. Select **Extension type: Java**, browse to `MacroWorkFlow-v1.0.0.jar`, click **Next**.
+3. Select **Extension type: Java**, browse to `MacroWorkFlow.jar`, click **Next**.
 4. The **Macro Builder** tab appears in the Burp tab bar.
 
 **Requirements:** Burp Suite Pro or Community 2023.x+, Java 11+.
