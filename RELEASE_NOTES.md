@@ -1,6 +1,6 @@
-# MacroWorkFlow — Release Notes
+# MacroWorkFlow - Release Notes
 
-## What's New
+## What's New in MacroWorkFlow-v1.0.1
 
 ### Search Box in Node View & Node Edit Window
 A search box has been added to both the Node View and Node Edit windows, making it easier to navigate and filter captures, placeholders, and fields when working with large or complex workflows.
@@ -19,4 +19,4 @@ This makes it faster to build precise captures without leaving the editor.
 
 ## Bug Fixes
 
-- **Regex Match & Replace for Response Header + Body** — Fixed an issue where regex match and replace rules were not being applied correctly to response headers and body content.
+- **Regex Match & Replace for Response Header + Body** - Fixed an issue where regex match and replace rules were not being applied correctly to response headers and body content.
