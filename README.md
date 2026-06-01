@@ -26,10 +26,25 @@ The demo.json file includes the following workflows:
 - Workflows from **crAPI** (https://github.com/OWASP/crAPI)
 - A **CSRF** workflow based on the login flow from **Gin and Juice Shop** (https://ginandjuice.shop)
 
-Import:
+**Import**
 <img width="1264" height="555" alt="Import1" src="https://github.com/user-attachments/assets/bda9eae4-721a-4886-859d-4001bcaf0e93" />
 
+---
+**Add Captures**
 
+1. Search Box in Node View & Node Edit Window - the Node View and Node Edit windows for easier navigation and filtering.
+<img width="921" height="598" alt="AddCaptures7" src="https://github.com/user-attachments/assets/ac0fdd87-fd1d-46cb-90af-bcbeaf9719dc" />
+
+2. Add Capture from Selection (Right-Click Context Menu): Right-clicking and selecting "Add Capture from Selection" now opens a popup window where you can:
+- Define your own capture pattern
+- See a live match count for your Regex against the current HTTP data
+<img width="1217" height="756" alt="AddCaptures4" src="https://github.com/user-attachments/assets/110f7792-dac2-454f-abf2-d346c00835f2" />
+<img width="1176" height="730" alt="AddCaptures5" src="https://github.com/user-attachments/assets/e8245cc4-83ed-4b0d-b6dc-af7ea5711844" />
+<img width="1174" height="762" alt="AddCaptures6" src="https://github.com/user-attachments/assets/f1a4ddda-3460-4567-a1a1-f156238478ed" />
+
+
+
+---
 **1. Send to Macro Workspace**
 
 Right-click any request → MacroFlow Extension → Send Request to Macro Workspace.
