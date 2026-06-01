@@ -1,7 +1,5 @@
 # MacroFlow - Burp Suite Extension (Version 1.0.1)
 
-> ⚠️ **Development Phase (Solo - Fun Project)**
-
 ---
 
 ## What is MacroFlow?
