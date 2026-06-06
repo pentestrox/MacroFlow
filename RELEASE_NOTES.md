@@ -1,7 +1,8 @@
 # MacroWorkFlow - Release Notes
 
-# MacroFlow v1.0.3 - Release Notes
+# 06-June-2026
 
+## What's New in MacroFlow-v1.0.3
 ## Bug Fixes
 
 ### BUG-001 - Disconnected CustomNode intercepts live requests
