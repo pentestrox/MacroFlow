@@ -6,7 +6,6 @@
 ## Bug Fixes
 
 ### BUG-001 - Disconnected CustomNode intercepts live requests
-### BUG-002 - Disconnected CustomNode prompt dialog shown at workflow start
 ## New Feature - Prompt User Capture (CustomNode)
 Adds **Prompt** and **Prompt Label** columns to the *Downstream Captures* table on CustomNode.
 
