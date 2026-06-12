@@ -9,8 +9,11 @@ It replaces Burp's built-in Macro system with a drag-and-drop canvas where you
 build multi-step HTTP flows, automatically inject session tokens, and validate
 reflected payloads across multiple (MAX 3) targets - all without writing a single script.
 
-<img width="1309" height="722" alt="Screenshot 2026-05-30 002621" src="https://github.com/user-attachments/assets/42868dce-31c4-4123-b20b-0fe662043c43" />
+(Upcomming - UI Templates)
 
+<img width="1721" height="748" alt="image" src="https://github.com/user-attachments/assets/31a476ed-68f7-4149-91aa-1098fc4e598a" />
+
+<img width="1736" height="753" alt="image" src="https://github.com/user-attachments/assets/05093a4f-c886-43dd-a3ef-6bf821e9f478" />
 
 
 ## What it does
