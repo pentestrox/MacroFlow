@@ -1,5 +1,54 @@
 # MacroWorkFlow - Release Notes
 
+# 17-June-2026
+
+## What's New in MacroFlow-v1.0.4 and Bug Fixes
+
+### 1. ConditionalNode (IF/THEN/ELSE branching)
+
+Route workflow execution based on request or response content.
+
+- **AND / OR logic** - combine multiple match conditions with AND (all must match) or OR (any match triggers TRUE)
+- **TRUE branch** (green port) and **FALSE branch** (orange port) - connect separate node chains for each outcome
+- **Pre-check toggle** - when OFF the conditional evaluates the *original* live request/response without sending a separate pre-check request; the original hits the server exactly once
+- **Re-fire on TRUE** - after the TRUE branch completes (e.g. refreshes a session token), the engine automatically re-fires the original request with the updated session - no extra Trigger Target node needed
+- Conditions match against: Request Body, Response Body, Response Headers, Status Code
+- Regex or plain-text matching per condition
+- Full AND/OR short-circuit evaluation
+
+### 2. Session Storage (SSN) - Global Placeholder Store
+
+Persist extracted values across workflow steps and across multiple triggered requests.
+
+- Define named placeholders: `$SSN_TokenName$` - available everywhere (request templates, custom rules, AI prompts)
+- **SSN Manager** button (⊕ SSN in header) - view current values, add/rename/delete entries, see which capture last updated each key
+- **Captures → SSN** - any capture entry can be wired to an SSN placeholder via the "SSN Target" column; value is written to the store the moment the capture fires
+- **Prompt → SSN** - Prompt User Capture nodes can write their entered value directly to SSN
+- **Safe delete** - deleting an SSN key warns if it has a wired capture source; on confirm, scrubs `ssnTarget` from all nodes in all workflows
+- **Import clean-replace** - importing a JSON workflow replaces SSN definitions cleanly (no stale merge)
+- Persisted to Burp extension settings (`macroflow_ssn_defs`); survives Burp restart
+
+### 3. Two New Themes
+
+| Theme | Description |
+|-------|-------------|
+| **Silver White** | Clean light grey palette, glossy card style |
+| **Grey+Red** | Flat dark grey cards with red border accents |
+
+Switch theme: right-click canvas → ⚙ General Settings → theme cycle button  
+Or: **⚙** header button → User Preferences
+
+### 4. Two New UI Templates
+
+| Template | Description |
+|----------|-------------|
+| **Pipeline Card** | Workflow rows with a structured card layout |
+| **Radial** | Hover any workflow row to reveal a fan of action buttons (bloom menu) |
+
+Change template: **⚙** → User Preferences → UI Template
+
+
+---
 # 06-June-2026
 
 ## What's New in MacroFlow-v1.0.3
